@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+     
+    <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="重启"
+      android:onClick="control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="关机"
+      android:onClick="control_close"/>
+     </LinearLayout>   
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="A6 LED控制开"
+      android:onClick="led_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="A6 LED控制关"
+      android:onClick="led_control_close"/>
+        <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="获取A6 LED控制状态"
+      android:onClick="get_led_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_led_data"/>
+      
+  </LinearLayout>  
+<LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="5_C3 灯板供电接口 (J21 pin1)开"
+      android:onClick="j21_pin1_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="5_C3 灯板供电接口 (J21 pin1)关"
+      android:onClick="j21_pin1_control_close"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="获取5_C3 灯板供电接口 (J21 pin1)状态"
+      android:onClick="get_j21_pin1_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_j21_pin1_data"/>
+      
+  </LinearLayout> 
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="0_A1 人体感应开"
+      android:onClick="A1_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="0_A1 人体感应关"
+      android:onClick="A1_control_close"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="获取0_A1 人体感应状态"
+      android:onClick="get_A1_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_A1_data"/>
+      
+  </LinearLayout>  
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="5_C2 GPIO_UART_SPI0 (J3 pin2)开"
+      android:onClick="J3_pin2_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="5_C2 GPIO_UART_SPI0 (J3 pin2)关"
+      android:onClick="J3_pin2_control_close"/>
+        <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="获取5_C2 GPIO_UART_SPI0 (J3 pin2)状态"
+      android:onClick="get_J3_pin2_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_J3_pin2_data"/>
+      
+  </LinearLayout>  
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="5_C1 GPIO_UART_SPI0 (J3 pin3)开"
+      android:onClick="J3_pin3_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="5_C1 GPIO_UART_SPI0 (J3 pin3)关"
+      android:onClick="J3_pin3_control_close"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="获取5_C1 GPIO_UART_SPI0 (J3 pin3)状态"
+      android:onClick="get_J3_pin3_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_J3_pin3_data"/>
+      
+  </LinearLayout>  
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=" 7_A6 HOST USB1 CON30_USB_PWR开"
+      android:onClick="CON30_USB_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=" 7_A6 HOST USB1 CON30_USB_PWR关"
+      android:onClick="CON30_USB_control_close"/>
+        <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=" 获取7_A6 HOST USB1 CON30_USB_PWR状态"
+      android:onClick="get_CON30_USB_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_CON30_USB_data"/>
+      
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="7_B3 开门按钮开"
+      android:onClick="door7_B3_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="7_B3 开门按钮关"
+      android:onClick="door7_B3_control_close"/>
+        <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="获取7_B3 开门按钮状态"
+      android:onClick="get_7_B3_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_7_B3_data"/>
+      
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="7_B4 门铃接口 (J5 pin1)开"
+      android:onClick="J5_pin1_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=" 7_B4 门铃接口 (J5 pin1)关"
+       android:onClick="J5_pin1_control_close"/>
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="获取7_B4 门铃接口 (J5 pin1)状态"
+      android:onClick="get_J5_pin1_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_J5_pin1_data"/>
+      
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="7_B5 用于门口机开锁,检测门磁 (J8 pin4)开"
+      android:onClick="J8_pin4_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=" 7_B5 用于门口机开锁,检测门磁 (J8 pin4)关"
+      android:onClick="J8_pin4_control_close"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="获取7_B5 用于门口机开锁,检测门磁 (J8 pin4)状态"
+      android:onClick="get_J8_pin4_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_J8_pin4_data"/>
+      
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="7_C0 用于门口机开锁,检测门磁 Not close-test (J8 pin3)开"
+      android:onClick="J8_pin3_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=" 7_C0 用于门口机开锁,检测门磁 Not close-test (J8 pin3)关"
+      android:onClick="J8_pin3_control_close"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=" 获取7_C0 用于门口机开锁,检测门磁 Not close-test (J8 pin3)状态"
+      android:onClick="get_J8_pin3_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_J8_pin3_data"/>
+      
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="8_A3 用于门口机开锁,检测门磁 Opendoor-con (J8 pin2)开"
+      android:onClick="J8_pin2_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="8_A3 用于门口机开锁,检测门磁 Opendoor-con (J8 pin2)关"
+      android:onClick="J8_pin2_control_close"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="获取8_A3 用于门口机开锁,检测门磁 Opendoor-con (J8 pin2)状态"
+      android:onClick="get_J8_pin2_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_J8_pin2_data"/>
+      
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="6_C3 安防接口 (J24 pin2)开"
+      android:onClick="J24_pin2_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="6_C3 安防接口 (J24 pin2)关"
+      android:onClick="J24_pin2_control_close"/>
+        <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="获取6_C3 安防接口 (J24 pin2)状态"
+      android:onClick="get_J24_pin2_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_J24_pin2_data"/>
+      
+  </LinearLayout>
+   <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="6_C0 安防接口 (J24 pin3)开"
+      android:onClick="J24_pin3_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="6_C0 安防接口 (J24 pin3)关"
+      android:onClick="J24_pin3_control_close"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="获取6_C0 安防接口 (J24 pin3)状态"
+      android:onClick="get_J24_pin3_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_J24_pin3_data"/>
+      
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="6_C1 安防接口 (J24 pin4)开"
+      android:onClick="J24_pin4_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="6_C1 安防接口 (J24 pin4)关"
+      android:onClick="J24_pin4_control_close"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="获取6_C1 安防接口 (J24 pin4)状态"
+      android:onClick="get_J24_pin4_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_J24_pin4_data"/>
+      
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="6_C2 安防接口 (J24 pin5)开"
+      android:onClick="J24_pin5_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="6_C2 安防接口 (J24 pin5)关"
+      android:onClick="J24_pin5_control_close"/>
+        <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="获取6_C2 安防接口 (J24 pin5)状态"
+      android:onClick="get_J24_pin5_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_J24_pin5_data"/>
+      
+  </LinearLayout>
+   <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="7_B1 安防接口 (J14 pin2)开"
+      android:onClick="J14_pin2_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="7_B1 安防接口 (J14 pin2)关"
+      android:onClick="J14_pin2_control_close"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="获取7_B1 安防接口 (J14 pin2)状态"
+      android:onClick="get_J14_pin2_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_J14_pin2_data"/>
+      
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="8_A7 安防接口 (J14 pin3)开"
+      android:onClick="J14_pin3_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="8_A7 安防接口 (J14 pin3)关"
+      android:onClick="J14_pin3_control_close"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="获取8_A7 安防接口 (J14 pin3)状态"
+      android:onClick="get_J14_pin3_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_J14_pin3_data"/>
+      
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=" 6_C5 安防接口 (J14 pin4)开"
+      android:onClick="J14_pin4_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=" 6_C5 安防接口 (J14 pin4)关"
+      android:onClick="J14_pin4_control_close"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=" 获取6_C5 安防接口 (J14 pin4)状态"
+      android:onClick="get_J14_pin4_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_J14_pin4_data"/>
+      
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=" 6_C6 安防接口 (J14 pin5)开"
+      android:onClick="J14_pin5_control_open"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="6_C6 安防接口 (J14 pin5)关"
+      android:onClick="J14_pin5_control_close"/>
+       <Button android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="获取6_C6 安防接口 (J14 pin5)状态"
+      android:onClick="get_J14_pin5_control"/>
+       <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:id="@+id/tv_J14_pin5_data"/>
+      
+  </LinearLayout>
+  </LinearLayout>
+</ScrollView>
